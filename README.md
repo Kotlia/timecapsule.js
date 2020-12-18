@@ -17,8 +17,6 @@
 
 > Make your variable survive reboot
 
-### 🏠 [Homepage](https://github.com/Kotlia/timemachine.js#readme)
-
 ## Install
 
 ```sh
