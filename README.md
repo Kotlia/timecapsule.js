@@ -17,7 +17,7 @@
 
 > Make your variable survive reboot
 
-### 🏠 [Homepage](https://github.com/Kotlia/timemachine#readme)
+### 🏠 [Homepage](https://github.com/Kotlia/timemachine.js#readme)
 
 ## Install
 
@@ -35,16 +35,12 @@ yarn run test
 
 👤 **Kotlia**
 
-* Twitter: [@\_Kotlia](https://twitter.com/\_Kotlia)
+* Twitter: [@_Kotlia](https://twitter.com/\_Kotlia)
 * Github: [@Kotlia](https://github.com/Kotlia)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Kotlia/timemachine/issues). You can also take a look at the [contributing guide](https://github.com/Kotlia/timemachine/blob/master/CONTRIBUTING.md).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
+Contributions, issues and feature requests are welcome!
 
 ## 📝 License
 
