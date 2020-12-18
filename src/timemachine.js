@@ -23,5 +23,19 @@ export default class Timemachine {
             );
         `)
 
+        const rows = this.db.prepare(`
+            SELECT * FROM "${this.filename}"
+        `).all()
+
+        if (rows.length > 0) {
+            Object.entries(param).forEach(it => {
+                global[it[0]] = eval(`(${rows.filter(_ => _.name === it[0])[0].value})`)
+            })
+        } else {
+            Object.entries(param).forEach(it => {
+                global[it[0]] = it[1]
+            })
+        }
+
     }
 }
