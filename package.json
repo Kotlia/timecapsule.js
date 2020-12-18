@@ -2,7 +2,8 @@
   "name": "@kotlia/timemachine",
   "version": "1.0.0",
   "description": "Saves variables in SQLite",
-  "main": "src/index.js",
+  "main": "src/timemachine.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Kotlia/timemachine/issues"
   },
-  "homepage": "https://github.com/Kotlia/timemachine#readme"
+  "homepage": "https://github.com/Kotlia/timemachine#readme",
+  "dependencies": {
+    "better-sqlite3": "^7.1.1",
+    "path": "^0.12.7",
+    "serialize-javascript": "^5.0.1"
+  }
 }
