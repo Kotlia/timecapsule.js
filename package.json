@@ -1,0 +1,19 @@
+{
+  "name": "@kotlia/timemachine",
+  "version": "1.0.0",
+  "description": "Saves variables in SQLite",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kotlia/timemachine.git"
+  },
+  "author": "Kotlia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kotlia/timemachine/issues"
+  },
+  "homepage": "https://github.com/Kotlia/timemachine#readme"
+}
