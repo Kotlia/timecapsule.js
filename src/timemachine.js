@@ -37,5 +37,23 @@ export default class Timemachine {
             })
         }
 
+        const stmt = this.db.prepare(`INSERT OR REPLACE INTO "${this.filename}" VALUES (?, ?)`)
+
+        setInterval(() => {
+            Object.entries(global).forEach(it => {
+                if (!["global",
+                    "clearInterval",
+                    "clearTimeout",
+                    "clearImmediate",
+                    "setInterval",
+                    "setTimeout",
+                    "queueMicrotask",
+                    "setImmediate"
+                ].includes(it[0])) {
+                    stmt.run(it[0], serialize(it[1]))
+                }
+            }, Timemachine.globaloption.interval)
+        })
+
     }
 }
