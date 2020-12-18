@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kotlia/timemachine.git"
+    "url": "git+https://github.com/Kotlia/timemachine.js.git"
   },
   "author": "Kotlia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Kotlia/timemachine/issues"
+    "url": "https://github.com/Kotlia/timemachine.js/issues"
   },
-  "homepage": "https://github.com/Kotlia/timemachine#readme",
+  "homepage": "https://github.com/Kotlia/timemachine.js#readme",
   "dependencies": {
     "better-sqlite3": "^7.1.1",
     "path": "^0.12.7",
