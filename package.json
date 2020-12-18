@@ -1,5 +1,5 @@
 {
-  "name": "@kotlia/timemachine",
+  "name": "timemachine.js",
   "version": "1.0.0",
   "description": "Make your variable survive reboot",
   "main": "src/timemachine.js",
