@@ -1,7 +1,7 @@
 {
   "name": "@kotlia/timemachine",
   "version": "1.0.0",
-  "description": "Saves variables in SQLite",
+  "description": "Make your variable survive reboot",
   "main": "src/timemachine.js",
   "type": "module",
   "scripts": {

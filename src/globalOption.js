@@ -1,4 +1,5 @@
 import path from "path";
+import Timemachine from "./timemachine.js";
 
 export const globalOption = {
     interval: 1000,
