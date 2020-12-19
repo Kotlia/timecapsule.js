@@ -19,6 +19,26 @@
 
 [![Image from Gyazo](https://i.gyazo.com/12909c48dfe73768dc5df9559130ce51.gif)](https://gyazo.com/12909c48dfe73768dc5df9559130ce51)
 
+```javascript
+import Timemachine from "timemachine.js";
+
+Timemachine.globaloption //defines config that will be applied to every Timemachines
+    .setLocation("../assets/timemachine.db") //location of the database
+    .setInterval(500) //interval to save the variable
+
+new Timemachine({
+    //declare "timemachine-variables" here
+    counter: 0
+}, import.meta) //import.mete - required
+
+setInterval(() => {
+    //"timemachine-variables" can be accessed outside the class.
+    console.log(counter)
+    //can be incremented, decremented, added, subtracted, and so on...
+    counter++
+}, 200)
+```
+
 ## Install
 
 ```sh
