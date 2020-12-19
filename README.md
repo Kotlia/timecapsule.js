@@ -17,6 +17,8 @@
 
 > Make your variable survive reboot
 
+[![Image from Gyazo](https://i.gyazo.com/12909c48dfe73768dc5df9559130ce51.gif)](https://gyazo.com/12909c48dfe73768dc5df9559130ce51)
+
 ## Install
 
 ```sh

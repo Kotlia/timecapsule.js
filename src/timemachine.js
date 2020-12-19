@@ -5,7 +5,7 @@ import { globalOption } from "./globalOption.js";
 
 export default class Timemachine {
     static globaloption = globalOption
-    constructor(param, meta) {
+    constructor(initialState, meta) {
         this.db = Database(Timemachine.globaloption.location)
 
         this.filename = meta.url
@@ -28,11 +28,11 @@ export default class Timemachine {
         `).all()
 
         if (rows.length > 0) {
-            Object.entries(param).forEach(it => {
+            Object.entries(initialState).forEach(it => {
                 global[it[0]] = eval(`(${rows.filter(_ => _.name === it[0])[0].value})`)
             })
         } else {
-            Object.entries(param).forEach(it => {
+            Object.entries(initialState).forEach(it => {
                 global[it[0]] = it[1]
             })
         }
