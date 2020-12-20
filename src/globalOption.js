@@ -1,9 +1,9 @@
 import path from "path";
-import Timemachine from "./timemachine.js";
+import Timecapsule from "./timecapsule.js";
 
 export const globalOption = {
     interval: 1000,
-    setInterval(n) { Timemachine.globaloption.interval = n; return this },
+    setInterval(n) { Timecapsule.globaloption.interval = n; return this },
     location: null,
-    setLocation(loc) { Timemachine.globaloption.location = path.resolve(loc); return this },
+    setLocation(loc) { Timecapsule.globaloption.location = path.resolve(loc); return this },
 }

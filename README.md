@@ -1,40 +1,39 @@
-<h1 align="center">Welcome to timemachine.js 👋</h1>
+<h1 align="center">Welcome to timecapsule.js 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/Kotlia/timemachine#readme" target="_blank">
+  <a href="https://github.com/Kotlia/timecapsule#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="https://github.com/Kotlia/timemachine/graphs/commit-activity" target="_blank">
+  <a href="https://github.com/Kotlia/timecapsule/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/Kotlia/timemachine/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/Kotlia/timemachine.js" />
+  <a href="https://github.com/Kotlia/timecapsule/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/Kotlia/timecapsule.js" />
   </a>
   <a href="https://twitter.com/_Kotlia" target="_blank">
     <img alt="Twitter: _Kotlia" src="https://img.shields.io/twitter/follow/_Kotlia.svg?style=social" />
   </a>
 </p>
 
-> Make your variable survive reboot
+> Make your variables survive reboot
 
 [![Image from Gyazo](https://i.gyazo.com/12909c48dfe73768dc5df9559130ce51.gif)](https://gyazo.com/12909c48dfe73768dc5df9559130ce51)
 
+Learn more about this code
+
 ```javascript
-import Timemachine from "timemachine.js";
+import Timecapsule from "timecapsule.js";
 
-Timemachine.globaloption //defines config that will be applied to every Timemachines
-    .setLocation("../assets/timemachine.db") //location of the database
-    .setInterval(500) //interval to save the variable
+Timecapsule.globaloption
+    .setLocation("../assets/timecapsule.db")
+    .setInterval(500)
 
-new Timemachine({
-    //declare "timemachine-variables" here
+new Timecapsule({
     counter: 0
-}, import.meta) //import.mete - required
+}, import.meta)
 
 setInterval(() => {
-    //"timemachine-variables" can be accessed outside the class.
     console.log(counter)
-    //can be incremented, decremented, added, subtracted, and so on...
     counter++
 }, 200)
 ```
@@ -42,13 +41,7 @@ setInterval(() => {
 ## Install
 
 ```sh
-yarn install
-```
-
-## Run tests
-
-```sh
-yarn run test
+yarn add timecapsule.js
 ```
 
 ## Author
@@ -65,7 +58,4 @@ Contributions, issues and feature requests are welcome!
 ## 📝 License
 
 Copyright © 2020 [Kotlia](https://github.com/Kotlia).<br />
-This project is [MIT](https://github.com/Kotlia/timemachine/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+This project is [MIT](https://github.com/Kotlia/timecapsule/blob/master/LICENSE) licensed.

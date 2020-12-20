@@ -1,22 +1,22 @@
 {
-  "name": "timemachine.js",
+  "name": "timecapsule.js",
   "version": "1.0.0",
   "description": "Make your variable survive reboot",
-  "main": "src/timemachine.js",
+  "main": "src/timecapsule.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kotlia/timemachine.js.git"
+    "url": "git+https://github.com/Kotlia/timecapsule.js.git"
   },
   "author": "Kotlia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Kotlia/timemachine.js/issues"
+    "url": "https://github.com/Kotlia/timecapsule.js/issues"
   },
-  "homepage": "https://github.com/Kotlia/timemachine.js#readme",
+  "homepage": "https://github.com/Kotlia/timecapsule.js#readme",
   "dependencies": {
     "better-sqlite3": "^7.1.1",
     "path": "^0.12.7",

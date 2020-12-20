@@ -3,10 +3,10 @@ import Database from 'better-sqlite3'
 import serialize from 'serialize-javascript'
 import { globalOption } from "./globalOption.js";
 
-export default class Timemachine {
+export default class Timecapsule {
     static globaloption = globalOption
     constructor(initialState, meta) {
-        this.db = Database(Timemachine.globaloption.location)
+        this.db = Database(Timecapsule.globaloption.location)
 
         this.filename = meta.url
             .split("/")
@@ -52,7 +52,7 @@ export default class Timemachine {
                 ].includes(it[0])) {
                     stmt.run(it[0], serialize(it[1]))
                 }
-            }, Timemachine.globaloption.interval)
+            }, Timecapsule.globaloption.interval)
         })
 
     }
